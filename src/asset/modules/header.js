@@ -1,3 +1,5 @@
+import { getDataFromApi } from './apiModule';
+
 const createLogo = () => {
   const logo = document.createElement('div');
   logo.id = 'logo';
@@ -21,6 +23,11 @@ const searchForm = () => {
   submit.id = 'search-btn';
   submit.type = 'submit';
   submit.innerText = 'Search';
+
+  submit.addEventListener('click', () => {
+    localStorage.setItem('city', searchBar.value);
+    getDataFromApi();
+  });
 
   form.appendChild(searchBar);
   form.appendChild(submit);
