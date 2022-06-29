@@ -68,6 +68,21 @@ html, body {
         }
       }
 
+      button {
+        border: 4px solid $Studio-Zarach-—-Portfolio-Website-3-hex;
+        background-color: transparent;
+        color: $Studio-Zarach-—-Portfolio-Website-3-hex;
+        font-family: 'Titan One';
+        font-size: 1.15em;
+        border-radius: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $Studio-Zarach-—-Portfolio-Website-3-hex;
+          color: $Studio-Zarach-—-Portfolio-Website-4-hex;
+        }
+      }
 
     }
   }
