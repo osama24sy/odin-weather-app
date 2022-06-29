@@ -3,7 +3,7 @@ async function getDataFromApi() {
   if (!city) {
     city = 'damascus';
   }
-  const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=3f3e91e396b75a5db409acf255e2480d`);
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=3f3e91e396b75a5db409acf255e2480d`);
   const data = await response.json();
   return data;
 }
